@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 @font-face {
     font-family: 'FonteLogo';
-    src: url("../_fonts/bubblegum-sans-regular.otf")
+    src: url("../fonts/bubblegum-sans-regular.otf")
 }
 
 body {
@@ -46,7 +46,7 @@ top: 80px;
 #cabecalho {
     border-bottom: 2px #606060 solid;
     height: 150px;
-    background: url("../_imagens/logo-png-transparent.png") no-repeat 0px 90px;
+    background: url("../imagens/logo-png-transparent.png") no-repeat 0px 90px;
     background-size: 25% auto;
     
 }
