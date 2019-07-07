@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E0F8F7;
+    color:  #2F4F4F;
+    
+}
+span {
+    font-weight: bold;
+}
+p {
+text-align: justify; 
+text-indent: 50px;
+}
+a {
+    color: #606060;
+    text-decoration: none;
+
+}
+a:hover {
+    color: #6495ED;
+}
+
+#interface {
+    width: 900px;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+
+}
+
+
+header#cabecalho img#icone {
+
+position: absolute;
+left: 920px;
+top: 80px;
+
+}
+
+#cabecalho {
+    border-bottom: 2px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/logo-png-transparent.png") no-repeat 0px 90px;
+    background-size: 25% auto;
+    
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    padding: 0px;
+    margin-bottom: 0px; 
+}
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    
+    
+}
+
+
+/* menu hover (passar o mouse e ter efeito) */
+
+#menu {
+    display: block;
+}
+
+
+#menu ul {
+    
+    list-style:none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    
+}
+
+#menu ul li { 
+    display: inline; 
+}
+
+#menu ul li a {
+    
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #A9A9A9
+    
+}
+
+#menu ul li a:hover {
+    background-color:#FFFFFF;
+    color: #6495ED;
+    transition: background-color 1s;
+    
+}
+.clear {
+    clear: both;
+}
+
+section#corpo {
+display: block;
+float: left;
+width: 500px;
+border-right: 2px solid #606060;
+padding-right:  15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #ddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+
+}
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #E0F8F7;
+    margin: 0px;
+}
+
+table#tabelaaspec {
+   border: 1px solid #606060;
+   border-spacing: 0px;
+   margin-left: auto;
+   margin-right: auto; 
+
+}
+table#tabelaaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table#tabelaaspec td.ce {
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaaspec td.cd {
+    background-color: #cecece;
+
+}
+table#tabelaaspec caption {
+    color: #888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabelaaspec caption span {
+    display:block;
+    float: right;
+    color: #000;
+    font-size: 8pt;
+    margin-top:10px;
+
+}
+aside#lateral {
+    display: block;
+    float: right;
+    width: 350px;
+    background-color: #ddd; 
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+
+}
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #fff;
+    padding: 5px;
+
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 2px solid #606060;
+
+}
+
+footer#rodape p {
+text-align: center;
+
+} 
+nav h1 {
+    display: none;
+}
+
+
+figcaption h3 {
+    position: absolute;
+    bottom: 20px;
+
+}
+figcaption p {
+    position: absolute;
+    bottom: 0;
+
+}
+/* formatação de imagens com legenda */
+
+.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 10px 10px 10px #191970;
+}
+    .foto-legenda img {
+        width: 100%;
+        height: 100%;
+    }
+    .foto-legenda figcaption {
+        opacity: 0;
+        transition: opacity 2s;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(8, 83, 145, 0.5);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    } 
+    .foto-legenda:hover figcaption {
+        opacity: 1;
+        
+        
+    }
+    .link {
+        text-decoration: none;
+        color: black;
+        
+        
+    }
+    .link:hover {
+    color: #6495ED;
+    
+    }
