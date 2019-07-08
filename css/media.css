@@ -4,11 +4,12 @@ div#tv-radio{
     margin: auto;
     background: url("../imagens/radio-tv.png") no-repeat;
 }
+
 audio#musica{
     display: block;
     position: relative;
     left: 575px;
-    top: 500px;
+    top: 495px;
     width: 300px;
 }
 video#filme{

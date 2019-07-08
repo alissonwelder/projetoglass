@@ -8,6 +8,10 @@
     <link rel="stylesheet"  type="text/css" href="css/estilo.css" /> 
 </head>
  <script language="javascript" src="javascript/funcoes.js"> </script>
+ <script> function calc_total(){         
+     var qtd = (parseInt(document.getElementById("cQtd").value)) * 1500;         
+    document.getElementById("cTot").value = qtd;     }
+ </script>
 <body>
     <div id="interface">
 
@@ -42,12 +46,12 @@
                                 <h3>Fale Conosco > Contato</h3>
                                 <h1>Formulário de Contatos</h1>
                                 <h2>por Alisson Welder</h2>
-                                <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                                <h3 class="direita">Atualizado em 08/07/2019</h3>
                                 </hgroup>
                             </header>
 
 
-<form method="POST" id="fContato" action="mailto:alisson-welder@hotmail.com">
+<form method="POST" id="fContato" action="mailto:alisson-welder@hotmail.com" oninput="calc_total();" />
 
     <fieldset id="usuario"><legend>Identificação do Usuário</legend>
         <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" 
@@ -55,7 +59,7 @@
         <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha"
             size="8" maxlength="8" placeholder="8 digitos" /> </p>
             <p><label for="cEmail">E-mail:</label> <input type="email" name="tEmail" id="cEmail"
-                size="20" maxlength="40" /> </p>
+                size="20" maxlength="30" /> </p>
         <fieldset id="sexo"><legend>Sexo</legend>
             <input type="radio" name="tSexo" id="cMasc" checked /> <label for="cMasc" >Masculino</label></br>
             <input type="radio" name="tSexo" id="cFem" /> <label for="cFem">Feminino</label>
@@ -68,7 +72,7 @@
         <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" 
             size="15" maxlength="80" placeholder="Rua, Av., Tv..." /></p>
             <p><label for="cNum">Número:</label>
-                <input type="number" name="tNum" id="cNum" min="0" max="9999" onKeyDown="return false"/></p>
+                <input type="number" name="tNum" id="cNum" min="0" max="9999" style="width:70px;"/></p>
         <p><label for="cEst">Estado:</label>
         <select name="tEst" id="cEst"/> 
                 <optgroup label="Região Sudeste"><option value="RJ">Rio de Janeiro</option>
@@ -93,18 +97,26 @@
         Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2" />Max </p>
         <p>
             <label for="cMsg">Mensagem:</label>
-            <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe Sua Mensagem"></textarea>
+            <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe Sua Mensagem"></textarea>
         </p>
     </fieldset>
     
     <fieldset id="pedido"><legend>Quero um Google Glass</legend>
-        <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-        <p><label for="cCor">Cor:</label></p>
-        <p><label for="cQtd">Quantidade:</label></p>:
-        <p><label for="cTot">Preço total</label></p>
+        <p><input type="checkbox" name="tPed" id="cPed" checked>
+            <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+            <p><label for="cCor">Cor:</label>
+                <input type="color" name="tCor" id="cCor" value="#0000FF">
+            </p>
+        <p><label for="cQtd">Quantidade:</label>
+            <input type="number" name="tQtd" id="cQtd" min="0" mx="5" value="0" style="width:60px;">
+        </p>
+        <p><label for="cTot">Preço total</label>
+            <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly>
+        </p>
     </fieldset> 
 
-    [BOTÃO ENVIAR]
+    <!-- <input type="submit" value="Enviar"> -->
+    <input type="image" name="tEnviar" src="imagens/botao-enviar.png">
     </form>
 
         </article>        
